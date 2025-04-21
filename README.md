@@ -13,7 +13,7 @@ Technologies Used:
 - NumPy
 - tqdm
 
-Future ıdeas:
+Future Ideas:
 - Add vehicle speed estimation
 - Improve lane-change detection
 - Create a dashboard for live visual analytics
