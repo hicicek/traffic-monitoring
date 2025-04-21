@@ -1,19 +1,34 @@
 # 🚦 Traffic Monitoring using YOLOv8
 A real-time vehicle tracking project that analyzes traffic flow in a 3-way roundabout using computer vision.
 
-🎥 [Click here to watch the 14s demo video](./Demo.mp4)
+---
 
-This project uses YOLOv8 to detect and track vehicles as they pass through a 3-way roundabout. Each road is assigned a color (red, yellow, or green), and vehicles are tagged based on where they exit. When a vehicle enters an area, the system increases the count for that road — helping visualize traffic patterns in real-time. It's designed to be simple and efficient, just plug in a traffic video and see the flow unfold!
+## 🎥 Demo
 
-Technologies Used:
-- Python
-- YOLOv8 (Ultralytics)
-- OpenCV
-- Supervision (Roboflow)
-- NumPy
-- tqdm
+Check out the 14-second demo video to see it in action!  
+👉 [Watch Demo Video](./Demo.mp4)
 
-Future Ideas:
-- Add vehicle speed estimation
-- Improve lane-change detection
-- Create a dashboard for live visual analytics
+---
+
+## 🧠 What It Does
+
+This project detects and tracks vehicles as they pass through a roundabout. Here's how it works:
+
+- The roundabout has **3 entry roads**, each color-coded (Red, Yellow, Green).
+- Each detected vehicle is **tagged based on where it exits** the roundabout.
+- When the vehicle enters, the system:
+  - **Identifies the exit path**
+  - **Increases a count** for that enter
+- It uses bounding boxes, entry tagging, and custom logic to make everything work in real-time.
+
+It’s simple, effective, and fun to watch!
+
+---
+
+## 🛠️ Technologies Used
+
+- 🧠 [YOLOv8](https://github.com/ultralytics/ultralytics) - Object detection
+- 🎥 OpenCV - Video processing
+- 📊 NumPy - Matrix calculations
+- 📦 Supervision (by Roboflow) - Helpful annotation tools
+- 🔁 tqdm - For progress bars
